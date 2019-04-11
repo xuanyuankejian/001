@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			body{
+				margin: 0;
+				padding: 0;
+			}
+			#tupian{width: auto;
+				height: 250px;
+				position: relative;
+				float: left;
+			}
+			#datuquyu{
+				width: 300px;
+				height: 300px;
+				background: #137CE9;
+				position: absolute;
+				left: 250px;
+				display: none;
+				overflow: hidden;
+				
+			}
+			#zuobianfangda{
+				position: absolute;
+				width: 100px;
+				height: 100px;
+				background: #00FFFF;
+				opacity: 0.5;
+				cursor: crosshair;
+				display: none;
+			}
+			#datuqy{
+					
+					position: absolute;
+					width: 500px;
+					height: 500px;
+				}
+			#tupian>img{
+				border: none;
+				width: 250px;
+				height: 250px;
+				float: left;
+			}
+			#neirong{
+				float: left;
+			}
+			p:first-child{
+				
+			}
+			.money{
+				color: red;
+				font-size: 20px;
+			}
+			.shuru{
+				width: 30px;
+				text-align: center;
+			}
+			input:last-child{
+				width: 88px;
+				height: 30px;
+				background: orangered;
+				color: white;
+				border: none;
+				cursor: pointer;
+				display: block;
+				margin-top: 10px;
+			}
+			#neirong{
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="zong">
+			
+			
+		</div>
+		
+		<script type="text/javascript">
+			
+			window.onload=function(){
+			var data = {
+				"10001": {
+					id: 10001,
+					title: "米家平衡车",
+					price: "1999",
+					imgurl: "../image/01.jpg"
+				},
+				"10002": {
+					id: 10002,
+					title: "米家互联网空调",
+					price: "1999",
+					imgurl: "../image/02.jpg"
+				},
+				"10003": {
+					id: 10003,
+					title: "米家电磁炉",
+					price: "199",
+					imgurl: "../image/03.jpg"
+				},
+				"10004": {
+					id: 10004,
+					title: "小米无线车充",
+					price: "149",
+					imgurl: "../image/04.jpg"
+				},
+				"10005": {
+					id: 10005,
+					title: "小爱同学",
+					price: "249",
+					imgurl: "../image/05.jpg"
+				},
+				"10006": {
+					id: 10006,
+					title: "小米K歌耳机",
+					price: "349",
+					imgurl: "../image/06.jpg"
+				},
+				"10007": {
+					id: 10007,
+					title: "尤克里里",
+					price: "399",
+					imgurl: "../image/07.jpg"
+				},
+				"10008": {
+					id: 10008,
+					title: "米家护腰靠枕",
+					price: "79",
+					imgurl: "../image/08.jpg"
+				},
+				"10009": {
+					id: 10009,
+					title: "米家摄像机",
+					price: "399",
+					imgurl: "../image/09.jpg"
+				},
+				"10010": {
+					id: 10010,
+					title: "小米路由器",
+					price: "399",
+					imgurl: "../image/10.jpg"
+				},
+				"10011": {
+					id: 10011,
+					title: "米家石英表",
+					price: "99",
+					imgurl: "../image/11.jpg"
+				},
+				"10012": {
+					id: 10012,
+					title: "小米无人机4K版",
+					price: "2999",
+					imgurl: "../image/12.jpg"
+				},
+				"10013": {
+					id: 10013,
+					title: "小米自动折叠伞",
+					price: "79",
+					imgurl: "../image/13.jpg"
+				}
+			};
+			var id = location.search.split("=")[1];
+			var zong = document.getElementById("zong");
+			zong.innerHTML=`
+			<div id="tupian">
+				<img src="${data[id].imgurl}" id="tupiande"/>
+				<div id = "zuobianfangda"></div>
+				<div id = "datuquyu">
+					<img src="${data[id].imgurl}" id="datuqy"/>
+				</div>
+			</div>
+			<div id="neirong">
+				<p>${data[id].title}</p>
+				<p class="money">￥${data[id].price}</p>
+				<input type="text" class="shuru" value="1"/>
+				<input type="button" value="加入购物车" />
+			</div>
+			`
+			
+			
+			var otupian = document.getElementById("tupian");
+			var ofangda = document.getElementById("zuobianfangda");
+			var oyou = document.getElementById("datuquyu");
+			var datuqy = document.getElementById("datuqy");
+			var tupiande = document.getElementById("tupiande");
+			otupian.onmouseover=function(){
+			ofangda.style.display="block";
+			
+			oyou.style.display="block";
+			}
+			otupian.onmouseout=function(){
+			ofangda.style.display="none";
+			oyou.style.display="none";
+			}
+			
+			otupian.onmousemove=function(e){
+				var evt=e||event;
+				var a = evt.clientX-ofangda.offsetWidth/2;
+				var b = evt.clientY-ofangda.offsetHeight/2;
+				ofangda.style.left = a+"px";
+				ofangda.style.top = b+"px";
+				
+				
+				
+				
+				
+				datuqy.style.left=-a/otupian.offsetWidth*oyou.offsetWidth+"px";
+				datuqy.style.top=-a/otupian.offsetHeight*oyou.offsetHeight+"px";
+				
+				
+			}
+			
+			
+			
+			
+}			
+			
+		</script>
+		
+	</body>
+</html>

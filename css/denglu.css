@@ -1,0 +1,173 @@
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2; }
+
+img {
+  border: none; }
+
+.top {
+  padding: 20px 0;
+  width: 1200px;
+  height: 65px;
+  margin: 0 auto; }
+  .top img {
+    float: left; }
+  .top div {
+    padding-left: 30px;
+    margin-top: 10px;
+    margin-left: 35px;
+    float: left;
+    width: 171px;
+    height: 53px;
+    border-left: 1px solid #ccc; }
+    .top div span {
+      font-size: 28px;
+      line-height: 50px; }
+
+form {
+  font-size: 13px; }
+  form .dianji {
+    margin-left: 15px; }
+  form a {
+    color: #137ce9;
+    text-decoration: none; }
+  form .zhuce1 {
+    width: 295px;
+    background: #e5004b;
+    border: none;
+    margin-top: 10px;
+    height: 44px;
+    cursor: pointer;
+    color: #FFF;
+    line-height: 44px;
+    font-size: 20px; }
+
+.zhongjian {
+  width: 100%;
+  background: url(../image/login-bg.jpg) no-repeat center center;
+  height: 480px; }
+  .zhongjian .zj {
+    width: 1200px;
+    height: 480px;
+    margin: 0 auto;
+    position: relative;
+    color: #666; }
+    .zhongjian .zj .zhuce {
+      width: 342px;
+      height: 392px;
+      background: #fff;
+      position: absolute;
+      top: 46px;
+      right: 46px;
+      border: 1px solid #ccc; }
+      .zhongjian .zj .zhuce .shang {
+        padding: 10px 25px 30px 20px;
+        height: 40px; }
+        .zhongjian .zj .zhuce .shang h3 {
+          float: left; }
+        .zhongjian .zj .zhuce .shang span {
+          float: right;
+          font-size: 12px;
+          margin-top: 25px; }
+          .zhongjian .zj .zhuce .shang span a {
+            color: #137ce9;
+            text-decoration: none; }
+      .zhongjian .zj .zhuce .shurukuang {
+        padding: 0 20px; }
+        .zhongjian .zj .zhuce .shurukuang .waimian {
+          position: relative;
+          margin: 10px 0; }
+          .zhongjian .zj .zhuce .shurukuang .waimian .tubiao {
+            height: 22px;
+            padding: 8px 20px;
+            position: absolute;
+            left: 2px;
+            top: 2px; }
+          .zhongjian .zj .zhuce .shurukuang .waimian .shuru {
+            padding: 0 0 0 43px;
+            width: 253px;
+            height: 42px;
+            border: none;
+            background: #f9f9f9;
+            font-size: 13px; }
+          .zhongjian .zj .zhuce .shurukuang .waimian img {
+            vertical-align: middle;
+            cursor: pointer;
+            margin-left: 10px; }
+          .zhongjian .zj .zhuce .shurukuang .waimian .huoqu {
+            padding: 12px 20px;
+            border: none;
+            background-color: #e5004b;
+            color: #ffffff;
+            cursor: pointer;
+            margin-left: 10px; }
+        .zhongjian .zj .zhuce .shurukuang .huadong {
+          position: relative; }
+          .zhongjian .zj .zhuce .shurukuang .huadong > div {
+            float: left;
+            width: 288px;
+            position: relative; }
+            .zhongjian .zj .zhuce .shurukuang .huadong > div div:first-child {
+              position: absolute;
+              top: 0;
+              left: 95px;
+              font-size: 14px;
+              color: #FFFFFF;
+              line-height: 40px; }
+            .zhongjian .zj .zhuce .shurukuang .huadong > div div:last-child {
+              width: 291px;
+              height: 34px;
+              float: left;
+              background-color: #f29dba;
+              padding: 3px; }
+              .zhongjian .zj .zhuce .shurukuang .huadong > div div:last-child .kehuadong {
+                width: 52px;
+                height: 34px;
+                background: transparent url(../image/bg_draggable_qaptcha_1.png) no-repeat;
+                cursor: pointer;
+                position: relative;
+                top: 0;
+                left: 0; }
+        .zhongjian .zj .zhuce .shurukuang .login_checkbox_all {
+          margin: 10px 0 10px 0;
+          line-height: 22px;
+          height: 22px; }
+          .zhongjian .zj .zhuce .shurukuang .login_checkbox_all span {
+            color: #777777; }
+          .zhongjian .zj .zhuce .shurukuang .login_checkbox_all span:nth-of-type(2) {
+            margin-left: 30px; }
+          .zhongjian .zj .zhuce .shurukuang .login_checkbox_all span:last-child {
+            float: right; }
+            .zhongjian .zj .zhuce .shurukuang .login_checkbox_all span:last-child a {
+              color: #9F9F9F;
+              font-weight: normal; }
+      .zhongjian .zj .zhuce .hezuo {
+        margin: 15px 22px 15px 22px; }
+        .zhongjian .zj .zhuce .hezuo em {
+          font-style: normal;
+          color: #777777;
+          font-size: 12px;
+          line-height: 24px; }
+          .zhongjian .zj .zhuce .hezuo em span {
+            float: left; }
+          .zhongjian .zj .zhuce .hezuo em a {
+            display: block;
+            float: left;
+            margin-left: 10px;
+            line-height: 30px;
+            color: #137ce9; }
+
+.foot {
+  height: 40px;
+  text-align: center;
+  padding-top: 10px; }
+  .foot span {
+    font-size: 12px;
+    line-height: 24px;
+    color: #ccc; }
+
+.zuihou {
+  text-align: center; }
